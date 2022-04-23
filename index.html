@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima-App</title>
+
+    <!-- estilo -->
+    <link rel="stylesheet" href="/app-del-clima/styles.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/app-del-clima/assets/images/weather-favicon.png"
+    />
+
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Koulen&family=Oswald&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- scripts -->
+    <script src="/app-del-clima/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/002c258038.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main class="main" id="main">
+      <div class="container" id="container">
+        <!-- Input tiempo -->
+
+        <div class="inputtemp">
+          <h1 class="title" >Selecciona tu ciudad</h1>
+          <form action="" class="select__submit" id="select__submit">
+            <label for="cityoptions"></label>
+            <button class="submit" type="submit">Buscar</button>
+            <select name="select" class="select" id="select__input">
+            </select>
+          </form>
+          <!-- Input Number -->
+
+          <div class="inputtemp__number">
+            <div class="inputtemp__celsius" id="degreenumber"></div>
+            <div class="inputtemp__symbol">
+              <i class="fa-solid fa-temperature-low"></i>C
+            </div>
+          </div>
+
+          <!-- Input icono clima -->
+
+          <div class="weathericon" id="weathericon"></div>
+          <div class="inputtemp__description" id="inputtemp__description"></div>
+        </div>
+
+        <!-- Locacion y fecha -->
+
+        <div class="location">
+          <div class="location__city" id="timezone"></div>
+          <div class="location__date" id="date"></div>
+        </div>
+
+        <!-- Footer weather -->
+
+        <div class="weather">
+          <div class="degree-min-max">
+            <div class="weather__min">
+              <small>Min</small><span id="min"></span
+              ><i class="fa-solid fa-temperature-low"></i>C
+            </div>
+            <div class="weather__max">
+              <small>Max</small><span id="max"></span
+              ><i class="fa-solid fa-temperature-low"></i>C
+            </div>
+          </div>
+          <div class="fuente-datos">
+            <p>Fuente de datos: www.tutiempo.net</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

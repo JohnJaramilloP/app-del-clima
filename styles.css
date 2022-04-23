@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.container {
+    width: 16rem;
+    height: 32.5rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
+}
+
+.container.day {
+    background: url("/app-del-clima/assets/images/day.jpg") no-repeat center center/cover;
+}
+
+.container.night {
+    background: url("/app-del-clima/assets/images/night.jpg") no-repeat center center/cover;
+}
+
+.inputtemp {
+    margin: 1rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: .3;
+}
+
+.title {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: .2rem;
+}
+
+.select__submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.submit {
+    width: 30%;
+    margin-bottom: .4rem;
+    padding: .2rem 0;
+    background-color: #fff;
+    border: none;
+    border-radius: .5rem;
+    font-family: inherit;
+}
+
+.select {
+    width: 80%;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-family: inherit;
+}
+
+.inputtemp__number {
+    display: flex;
+    align-items: center;
+}
+
+.inputtemp__celsius {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.inputtemp__symbol {
+    color: #000;
+    font-size: 2rem;
+}
+
+.inputtemp__description {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.location {
+    display: flex;
+    flex: .6;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location__date {
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.location__date, .location__city {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.container.night .title {
+    color: #fff;
+}
+
+.container.night .inputtemp__celsius {
+    color: #fff;
+}
+
+.container.night .inputtemp__symbol {
+    color: #fff;
+}
+
+.container.night .inputtemp__description {
+    color:#fff
+}
+
+.container.night .location__city {
+    color:#fff
+}
+
+.container.night .location__date {
+    color:#fff
+}
+
+.container.night .weather__min {
+    color:#fff
+}
+
+.container.night .weather__max {
+    color:#fff
+}
+
+.weather {
+    flex: .1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #333;
+}
+
+.degree-min-max {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather__min, .weather__max {
+    padding: 0 1rem .2rem;
+}
+
+.weather__min span {
+    font-size: 1.4rem;
+    color: rgb(14, 14, 126);
+}
+
+.weather__max span {
+    font-size: 1.4rem;
+    color: rgb(153, 12, 12);
+}
+
+.fuente-datos {
+    font-size: .8rem;
+}
+
+
+
+
